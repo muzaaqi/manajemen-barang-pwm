@@ -33,7 +33,7 @@
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
                 <h1 class="text-2xl font-bold text-white">BELI.COM</h1>
-                <!-- Hamburger Menu -->
+               
                 <button id="menuButton" class="p-2 rounded-lg text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -41,7 +41,6 @@
                     </svg>
                 </button>
 
-                <!-- Popup Menu -->
                 <div id="popupMenu" class="hidden absolute right-2 top-[4.5rem] w-48 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden z-50">
                     <nav class="py-2">
                         <a href="/" class="block px-4 py-3 text-gray-700 hover:bg-teal-500 hover:text-white transition duration-300">
@@ -127,7 +126,7 @@
             </div>
         </div>
     </main>
-    <!-- Footer Section -->
+    
     <footer class="bg-teal-900 text-white mt-12 mb-0">
         <div class="container mx-auto px-4 py-12">
             
@@ -216,15 +215,13 @@
         const closeIcon = document.getElementById('closeIcon');
 
         menuButton.addEventListener('click', () => {
-            // Toggle popup menu
+           
             popupMenu.classList.toggle('hidden');
-            
-            // Toggle icons
+            
             menuIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('hidden');
         });
-
-        // Close menu when clicking outside
+
         document.addEventListener('click', (e) => {
             if (!menuButton.contains(e.target) && !popupMenu.contains(e.target)) {
                 popupMenu.classList.add('hidden');
