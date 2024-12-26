@@ -13,7 +13,6 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Desktop Navbar -->
     <header class="hidden md:block bg-teal-600 shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
@@ -28,7 +27,6 @@
         </div>
     </header>
 
-    <!-- Mobile Header -->
     <header class="md:hidden bg-teal-600 shadow-lg relative">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
@@ -217,11 +215,13 @@
         menuButton.addEventListener('click', () => {
            
             popupMenu.classList.toggle('hidden');
-            
+            
+
             menuIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('hidden');
         });
-
+
+
         document.addEventListener('click', (e) => {
             if (!menuButton.contains(e.target) && !popupMenu.contains(e.target)) {
                 popupMenu.classList.add('hidden');

@@ -13,7 +13,6 @@
     </style>
 </head>
 <body class="bg-gray-50">
-    <!-- Desktop Navbar -->
     <header class="hidden md:block bg-teal-600 shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
@@ -28,12 +27,11 @@
         </div>
     </header>
 
-    <!-- Mobile Header -->
     <header class="md:hidden bg-teal-600 shadow-lg relative">
         <div class="container mx-auto px-4">
             <div class="flex items-center justify-between h-16">
                 <h1 class="text-2xl font-bold text-white">BELI.COM</h1>
-                <!-- Hamburger Menu -->
+
                 <button id="menuButton" class="p-2 rounded-lg text-white focus:outline-none">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menuIcon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -41,7 +39,6 @@
                     </svg>
                 </button>
 
-                <!-- Popup Menu -->
                 <div id="popupMenu" class="hidden absolute right-2 top-[4.5rem] w-48 bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden z-50">
                     <nav class="py-2">
                         <a href="/" class="block px-4 py-3 text-gray-700 hover:bg-teal-500 hover:text-white transition duration-300">
@@ -104,7 +101,6 @@
         </div>
     </main>
 
-    <!-- Modal -->
     <div id="myModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center p-4">
         <div class="bg-white rounded-xl shadow-xl max-w-md w-full p-6">
             <div class="flex justify-between items-center mb-4">
@@ -235,7 +231,6 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside
         document.getElementById("myModal").addEventListener("click", function(e) {
             if (e.target === this) {
                 closeModal();
@@ -248,15 +243,11 @@
         const closeIcon = document.getElementById('closeIcon');
 
         menuButton.addEventListener('click', () => {
-            // Toggle popup menu
             popupMenu.classList.toggle('hidden');
-            
-            // Toggle icons
             menuIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('hidden');
         });
 
-        // Close menu when clicking outside
         document.addEventListener('click', (e) => {
             if (!menuButton.contains(e.target) && !popupMenu.contains(e.target)) {
                 popupMenu.classList.add('hidden');
