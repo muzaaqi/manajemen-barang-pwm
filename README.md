@@ -60,7 +60,7 @@ git clone https://github.com/muzaaqi/manajemen-barang-pwm.git
 ## 📞 Kontak
 
 Jika Anda memiliki pertanyaan atau menemukan masalah, silakan hubungi:
-- Email: [muzaaqi@yahoo.com]
+- Email: muzaaqi@yahoo.com
 - GitHub: [@muzaaqi](https://github.com/muzaaqi)
 
 ## 📄 Lisensi
