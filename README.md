@@ -30,8 +30,8 @@ git clone https://github.com/muzaaqi/manajemen-barang-pwm.git
 2. Import database
 ```bash
 # Import file SQL yang tersedia di folder db
-
-4. Jalankan aplikasi di web server (Apache/Nginx)
+```
+4. Jalankan file main.py
 
 ## 📱 Screenshot Aplikasi
 
