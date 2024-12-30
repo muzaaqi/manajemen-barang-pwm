@@ -42,7 +42,7 @@ git clone https://github.com/muzaaqi/manajemen-barang-pwm.git
 3. Form Input Barang
 <img src="res/input_barang_form.png" alt="Dashboard Manajemen Barang" />
 4. Transaksi
-<img src="res/dashboard.png" alt="Dashboard Manajemen Barang" />
+<img src="res/transaksi.png" alt="Dashboard Manajemen Barang" />
 5. Laporan
 <img src="res/laporan.png" alt="Dashboard Manajemen Barang" />
 
